@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!-- Metas -->
+
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=width-device, initial-scale=1.0">
+
+	<!-- Titulo -->
+
+	<title>Dashboard</title>
+
+	<!-- Vínculos -->
+
+	<link rel="stylesheet" type="text/css" href="css-dashboard/style.css">
+	<link rel="stylesheet" type="text/css" href="css-dashboard/responsive.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+</head>
+
+<body bgcolor="#ddd" onload="alerts();">
+
+	<!-- Menu de navegação -->
+
+	<nav>
+		<div class="logo">
+			<h1>Brand Name</h1>
+			<h1 id="logoMob">B</h1>
+		</div>
+		<div class="menuVert">
+			<div><h4>Dashboard</h4><p>&aelig;</p></div>
+			<div><h4>Expedição</h4><p>&amp;</p></div>
+			<div><h4>Anúncios</h4><p>&sect;</p></div>
+			<div><h4>Produtos</h4><p>&para;</p></div>
+			<div><h4>Transportadora</h4><p>&szlig;</p></div>
+			<div><h4>Integrações</h4><p>&Sigma;</p></div>
+			<div><h4>Configurações</h4><p>&Omega;</p></div>
+			<div><h4>Ajuda</h4><p>&omega;</p></div>
+		</div>
+	</nav>
+
+	<!-- Header da pagina -->
+
+	<header>
+		<i class="fa fa-bars" id="menuIcon"></i>
+		<div class="iconsNotify">
+			<i class="fa fa-user"></i>
+			<i class="fa fa-bell" id="iconNav">
+				<div style="display: flex; justify-content: center;">
+					<div id="smallBox">
+						<code>Nada aqui :(</code>
+					</div>
+				</div>
+			</i>
+			<i class="fa fa-envelope" id="iconNav2">
+				<div style="display: flex; justify-content: center;">
+					<div id="smallBox2">
+						<code>Nada aqui :(</code>
+					</div>
+				</div>
+			</i>
+		</div>
+	</header>
+
+	<!-- Alertas -->
+
+	<article class="col-alert" id="alert1">
+		<section style="background-color: #E83F3F">
+			<b><p>&odash;</p></b>
+			<p>Você tem <b>25</b> reclamações não respondidas!</p>
+			<b><p id="closeAlert1">&times;</p></b>
+		</section>
+	</article>
+
+	<article class="col-alert" id="alert2">
+		<section style="background-color: #f8b400">
+			<b><p>&sdotb;</p></b>
+			<p>Você tem <b>5</b> cadastros de produtos incompletos!</p>
+			<b><p id="closeAlert2">&times;</p></b>
+		</section>
+	</article>
+
+	<article class="col-alert" id="alert3">
+		<section style="background-color: #2c786c">
+			<b><p>&Gt;</p></b>
+			<p>Você tem <b>120</b> pedidos hoje :)</p>
+			<b><p id="closeAlert3">&times;</p></b>
+		</section>
+	</article>
+
+	<!-- Estatisticas, valores e gráficos -->
+
+	<article class="col-centered">
+		<section>
+			<div class="block" style="background-color: #666">
+				<h4>Produtos cadastrados</h4>
+				<h2>0</h2>
+			</div>
+			<div class="block" style="background-color: #666">
+				<h4>Clientes</h4>
+				<h2>0</h2>
+			</div>
+			<div class="block" style="background-color: #666">
+				<h4>Vendas</h4>
+				<h2>0</h2>
+			</div>
+			<div class="block" style="background-color: #666">
+				<h4>Pedidos</h4>
+				<h2>0</h2>
+			</div>
+		</section>
+	</article>
+
+	<article class="col-centered">
+		<section>
+			<canvas class="line-chart"></canvas>
+		</section>
+	</article>
+
+	<article class="col-dist">
+		<section>
+			<div class="info-cash">
+				<h2>Faturamento / <kbd>Último mês</kbd></h2>
+				<p>R$ 3.500,25</p>
+			</div>
+
+			<hr size="60" width="thin" color="#ddd"/>
+
+			<div class="info-cash">
+				<h2>Lucratividade / <kbd>Último mês</kbd></h2>
+				<p>R$ 1.250,46</p>
+			</div>
+
+			<hr size="60" width="thin" color="#ddd"/>
+
+			<div class="info-cash">
+				<h2>Saldo total</h2>
+				<p>R$ 120.800,62</p>
+			</div>
+
+		</section>
+	</article>
+
+	<article class="col-centered">
+		<section>
+			<code>+ Adicione um conteúdo</code>
+		</section>
+	</article>
+
+	<article class="col-centered">
+		<section>
+			<code>+ Adicione um conteúdo</code>
+		</section>
+	</article>
+
+	<article class="col-centered">
+		<section>
+			<code>Layout desenvolvido por - Ricardo de Paula Silva &copy; 2020<i>Portfólio Behance - <a href="https://www.behance.net/ricardo_de_paula" target="_blank">Design web e vetorial</a></i></code>
+		</section>
+	</article>
+
+	<!-- Javascript -->
+
+	<script type="text/javascript" src="js-dashboard/chart.js">
+	</script>
+
+	<script type="text/javascript" src="js-dashboard/alerts.js">
+	</script>
+
+	<!-- Scripts Jquery -->
+
+	<script type="text/javascript" src="js-dashboard/box-resize.js">
+	</script>
+
+</body>
+
+</html>
